@@ -94,6 +94,9 @@ vim.g.maplocalleader = ' '
 -- EC This was false by default
 vim.g.have_nerd_font = true
 
+-- EC clojure
+vim.g.maplocalleader = ','
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -255,6 +258,16 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+
+  -- EC clojure setup
+  -- conjure
+  'Olical/conjure',
+  -- Structural editing, optional
+  'guns/vim-sexp',
+  'tpope/vim-sexp-mappings-for-regular-people',
+  'tpope/vim-repeat',
+  'tpope/vim-surround',
+  -- end EC clojure
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
